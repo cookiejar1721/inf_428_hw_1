@@ -40,3 +40,21 @@ class Solution(object):
             nums1[k] = nums2[j]
             j -= 1
             k -= 1
+
+# Intersection of two arrays
+
+class Solution:
+    def intersection(self, nums1, nums2):
+        # Convert both lists to sets to remove duplicates
+        set1 = set(nums1)
+        set2 = set(nums2)
+        
+        result = []
+
+        # Check for presence in set1, add to result
+        for num in set2:
+            if num in set1:
+                result.append(num)
+
+        return result
+
