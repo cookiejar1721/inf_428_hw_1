@@ -1,0 +1,6 @@
+To calculate a cybercurity threat score for the whole company, first of all we need do find threat scores of each department.
+So we will generate random data based on variables like mean, variance and number of samples.
+After calculating mean threat score of a department, we use its importance level. 
+For example:  Engineering and Finance got mean threat score of 50 both but one has importance of 5 and the other pne has 2.
+In calculating aggregated threat score, importance 5 will make more impact(250 vs 100)
+Aggregated threat score will be calculated by summing mean score of each department and then dividing it by sum of importances.
