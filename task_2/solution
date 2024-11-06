@@ -4,3 +4,15 @@ After calculating mean threat score of a department, we use its importance level
 For example:  Engineering and Finance got mean threat score of 50 both but one has importance of 5 and the other pne has 2.
 In calculating aggregated threat score, importance 5 will make more impact(250 vs 100)
 Aggregated threat score will be calculated by summing mean score of each department and then dividing it by sum of importances.
+
+Case 1: 
+Departments have almost equal(similar) average threat scores and equal importance. 
+
+Case 2:
+One department has high importance and high average threat score.
+
+Case 3:
+One department with low number of employees and high average threat score.
+
+Case 4:
+Departments have variance(difference) in threat scores, number of users and importance.
