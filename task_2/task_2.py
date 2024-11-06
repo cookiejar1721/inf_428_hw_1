@@ -3,10 +3,8 @@ import numpy as np
 def generate_random_data(mean, variance, num_samples):
     return np.random.randint(max(mean - variance, 0), min(mean + variance + 1, 90), num_samples)
 
-
 def calculate_department_average(threat_scores):
     return np.mean(threat_scores)
-
 
 def calculate_aggregated_threat(departments):
     total_weighted_threat = 0
@@ -18,4 +16,5 @@ def calculate_aggregated_threat(departments):
         total_weighted_threat += weighted_threat
         total_importance += department['importance']
 
-    return total_weighted_threat / total_importance if total_importance > 0 else 0
+    return total_weighted_threat / total_importance
+
