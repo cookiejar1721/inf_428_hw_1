@@ -6,13 +6,29 @@ In calculating aggregated threat score, importance 5 will make more impact(250 v
 Aggregated threat score will be calculated by summing mean score of each department and then dividing it by sum of importances.
 
 Case 1: 
-Departments have almost equal(similar) average threat scores and equal importance. 
+Departments have almost equal(similar) average threat scores and equal importance, no outliers.
+Basic scenario.
 
 Case 2:
 One department has high importance and high average threat score.
+To test if it works correcly with highly important department.
 
 Case 3:
 One department with low number of employees and high average threat score.
+To test so that it wont affect the average threat score too much since its a small department.
 
 Case 4:
-Departments have variance(difference) in threat scores, number of users and importance.
+Departments have big variance(difference) in threat scores, number of users and importance.
+
+Case 5:
+All departments with 0 threat score.
+
+Case 6:
+One department with very high threat score but with low importance.
+To test how it affects the result.
+
+Case 7:
+Big variance in number of users in each department, but threat scores and importance are +- same.
+
+Case 8:
+All departments have high threat score and importance.
