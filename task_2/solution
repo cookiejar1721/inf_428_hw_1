@@ -19,19 +19,26 @@ departments with scores of 50 and importance 2.
 Case 3:
 One department with low number of employees and high average threat score.
 To test so that it wont affect the average threat score too much since its a small department.
+For example department with score of 95 but only 3 employees and an importance 2 shouldnt affect the score 
+of larger departments too much.
 
 Case 4:
 Departments have big variance(difference) in threat scores, number of users and importance.
+To test how it calculates when data is diverse. 
 
 Case 5:
 All departments with 0 threat score.
+To test how it goes with minimal measures. 
 
 Case 6:
 One department with very high threat score but with low importance.
-To test how it affects the result.
+To test how low importance affect the result. For example, a department with a score 90 but importance 1 
+should affect less than one with a score of 50 and importance 5.
 
 Case 7:
 Big variance in number of users in each department, but threat scores and importance are +- same.
+To test if the aggregated threat score will be average and not too affected by big departments.
 
 Case 8:
 All departments have high threat score and importance.
+To tests if the system can handle when the ioverall threat level is very high.
