@@ -7,11 +7,14 @@ Aggregated threat score will be calculated by summing mean score of each departm
 
 Case 1: 
 Departments have almost equal(similar) average threat scores and equal importance, no outliers.
-Basic scenario.
+Basic scenario check for the correctness of the calculation. The aggregated threat score should be like mean threat scores because 
+there is no variation. For example: if all departments have score 50 and importance 3, the overall threat score should be 50.
 
 Case 2:
 One department has high importance and high average threat score.
-To test if it works correcly with highly important department.
+To test if calculation shows correctly the high influence of important department. The aggregated threat score should be 
+higher than the average of less important departments. For exampl: department with mean score of 90 and importance 5 will affect more than 
+departments with scores of 50 and importance 2.
 
 Case 3:
 One department with low number of employees and high average threat score.
